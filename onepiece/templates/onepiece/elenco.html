@@ -1,15 +1,26 @@
 {% extends 'onepiece/base.html' %}
 {% load static %}
 
-{% block 'nav' %}
+{% block title %}Elenco - One Piece{% endblock %}
 
-
-{% for lista_usuario in usuarios %}
-    <p>{{ lista_usuario.nome }}</p>
-    <p>{{ lista_usuario.idade }}</p>
-    <p>{{ lista_usuario.cidade }}</p>
-{% endfor %}
-
+{% block content %}
+<div class="container">
+    <h1 class="text-center mb-4">Conheça o Elenco</h1>
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for lista_usuario in usuarios %}
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">{{ lista_usuario.nome }}</h5>
+                    <p class="card-text mb-1"><strong>Idade:</strong> {{ lista_usuario.idade }} anos</p>
+                    <p class="card-text"><strong>Cidade:</strong> {{ lista_usuario.cidade }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}
 
 {% block 'footer' %}

@@ -1,17 +1,19 @@
 {% extends 'onepiece/base.html' %}
 {% load static %}
 
-{% block 'nav' %}
+{% block title %}Sobre - Guaxinins{% endblock %}
 
+{% block content %}
 <div id="sobre" class="bg-white">
     <div class="container p-5">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-12 col-md-6">
-                <img src="./imgs/foto.webp" class="img-fluid" alt="guaxinim"/>
+                <!-- CORREÇÃO: Caminho da imagem ajustado para o padrão do Django -->
+                <img src="{% static 'onepiece/imgs/foto.webp' %}" class="img-fluid rounded" alt="guaxinim"/>
             </div>
             <div class="col-12 col-md-6">
                 <h1>Quem são os Guaxinins?</h1>
-                <p class="text-justify">  
+                <p class="text-secondary">  
                     Os guaxinins (Procyon lotor) são mamíferos noturnos da família Procyonidae, nativos das Américas. Conhecidos por suas máscaras pretas ao redor dos olhos e caudas listradas, eles são mestres da adaptação, vivendo em florestas, áreas urbanas e até pântanos.
                     Sua inteligência é comparável à de primatas, permitindo que resolvam problemas complexos, como abrir latas ou navegar por labirintos. São onívoros, alimentando-se de frutas, insetos, pequenos animais e até lixo humano – daí o apelido de "ladrões de máscara".
                 </p>
@@ -20,7 +22,6 @@
         </div>
     </div>
 </div>
-
 {% endblock %}
 
 {% block 'footer' %}
