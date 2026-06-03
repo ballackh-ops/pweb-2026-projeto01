@@ -1,13 +1,12 @@
 {% extends 'onepiece/base.html' %}
 {% load static %}
 
-{% block 'content' %}
+    {% block 'nav' %}
 
-    {% for lista_usuario in usuarios %}
-        <p>Nome: {{ lista_usuario.nome }}</p>
-        <p>Idade: {{ lista_usuario.idade }}</p>
-        <p>Cidade: {{ lista_usuario.cidade }}</p>
-        <h1>html</h1>
-    {% endfor %}
 
-{% endblock %}
+        <h1>index</h1>
+
+    {% endblock %}
+
+    {% block 'footer' %}
+    {% endblock %}

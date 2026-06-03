@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex: Guaxinins</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Guaxinins</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+             data-bs-target="#menuprincipal" aria-controls="menuprincipal"
+             aria-expanded="false" aria-label="toggle menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="menuprincipal" class="collapse navbar-collapse">                
+                <ul class="navbar-nav ms-md-auto text-center">
+                    <li class="nav-item">
+                        <a href="#hero" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#fatos" class="nav-link">Fatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="hero" class="card bg-dark text-white border-0">
+        <img src="./imgs/hero.jpg" class="card-img rounded-0" alt="guaxinins"/>
+        <div class="card-img-overlay text-center">
+            <h1>Descubra os Guaxinins!</h1>
+            <h6>
+                Os astutos e adoráveis ladrões da 
+                floresta que conquistam corações com sua curiosidade e 
+                inteligência.
+            </h6>
+            <a href="#" class="btn btn-primary btn-lg">Saiba Mais!</a>
+        </div>
+    </div>
+    <div id="sobre" class="bg-white">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="./imgs/foto.webp" class="img-fluid" alt="guaxinim"/>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h1>Quem são os Guaxinins?</h1>
+                    <p class="text-justify">  
+                        Os guaxinins (Procyon lotor) são mamíferos noturnos da família Procyonidae, nativos das Américas. Conhecidos por suas máscaras pretas ao redor dos olhos e caudas listradas, eles são mestres da adaptação, vivendo em florestas, áreas urbanas e até pântanos.
+                        Sua inteligência é comparável à de primatas, permitindo que resolvam problemas complexos, como abrir latas ou navegar por labirintos. São onívoros, alimentando-se de frutas, insetos, pequenos animais e até lixo humano – daí o apelido de "ladrões de máscara".
+                    </p>
+                    <a href="#" class="btn btn-outline-primary btn-lg">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fatos" class="bg-lightgray">
+        <div class="container p-5">
+            <div class="row">
+                <h1 class="col text-center">Fatos sobre os Guaxinins</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <img src="./imgs/hero.jpg" class="card-img-top" >
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Super Inteligentes</h5>
+                            <p class="card-text ">
+                                Guaxinins podem lembrar 
+                                soluções para problemas por até três anos!                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <img src="./imgs/hero.jpg" class="card-img-top"/>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Amantes de Água</h5>
+                            <p class="card-text ">
+                                Eles lavam sua comida na água antes 
+                                de comer, mesmo que não precise de limpeza.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <img src="./imgs/hero.jpg" class="card-img-top"/>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Exploradores Urbanos</h5>
+                            <p class="card-text ">
+                                Adaptados à vida na cidade, eles invadem
+                                 lixeiras e até telhados em busca de 
+                                 aventura.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contato" class="bg-white">
+        <div class="container p-5">
+            <h1 class="text-center">Adote um Guaxinim no Seu Coração</h1>
+            <h6 class="text-center">Quer saber mais ou apoiar a conservação? Entre em contato conosco!</h6>
+            <form class="row g-3">
+                <div class="col-12 col-md-8">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" id="nome" name="nome" required class="form-control"/>
+                </div>
+                <div class="col-12 col-md-4">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" id="email" name="email" required class="form-control"/>
+                </div>
+                <div class="col-12">
+                    <label for="msg" class="form-label">Mensagem</label>
+                    <textarea name="msg" id="msg" class="form-control" rows="5" ></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <input type="submit" value="Enviar" class="btn btn-lg btn-primary"/>
+                    <input type="reset" value="Cancelar" class="btn btn-lg btn-outline-secondary"/>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="bg-dark">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col text-white text-center">
+                    &copy; Todos os direitos reservados, 2025!
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

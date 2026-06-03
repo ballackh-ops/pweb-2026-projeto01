@@ -2,6 +2,10 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, "onepiece/index.html")
+def sobre(request):
+    return render(request, "onepiece/sobre.html")
+def elenco(request):
+    return render(request, "onepiece/elenco.html")
 
 def usuarios(request):
 
