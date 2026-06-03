@@ -4,13 +4,13 @@ def index(request):
     return render(request, "onepiece/index.html")
 
 def usuarios(request):
-    
+
     lista_usuario = [
-            {"Nome": "Iñaki Godoy", "Idade": 19, "Cidade": "Cidade do México"},
-            {"Nome": "Emily Rudd", "Idade": 19, "Cidade": "Spring Valley"},
-            {"Nome": "Jacob Gibson", "Idade": 19, "Cidade": "Denver"},
-            {"Nome": "Taz Skylar", "Idade": 19, "Cidade": "Tenerife"},
-            {"Nome": "Mackenyu", "Idade": 19, "Cidade": "Little Tokyo"},
+            {"nome": "Iñaki Godoy", "idade": 19, "cidade": "Cidade do México"},
+            {"nome": "Emily Rudd", "idade": 19, "cidade": "Spring Valley"},
+            {"nome": "Jacob Gibson", "idade": 19, "cidade": "Denver"},
+            {"nome": "Taz Skylar", "idade": 19, "cidade": "Tenerife"},
+            {"nome": "Mackenyu", "idade": 19, "cidade": "Little Tokyo"},
         ]
     
     context = {"usuarios": lista_usuario,}

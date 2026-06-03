@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
+{% extends 'onepiece/base.html' %}
+{% load static %}
+
+{% block 'content' %}
+
     {% for lista_usuario in usuarios %}
-        <p>Nome: {{ Nome }}</p>
-        <p>Idade: {{ Idade }}</p>
-        <p>Cidade: {{ Cidade }}</p>
+        <p>Nome: {{ lista_usuario.nome }}</p>
+        <p>Idade: {{ lista_usuario.idade }}</p>
+        <p>Cidade: {{ lista_usuario.cidade }}</p>
     {% endfor %}
-</body>
-</html>
+
+{% endblock %}
