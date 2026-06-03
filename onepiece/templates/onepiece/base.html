@@ -10,8 +10,8 @@
             projeto01
         {% endblock %}
     </title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'onepiece/css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'onepiece/css/style.css' %}"/>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -43,13 +43,9 @@
 {% endblock %}
 
 {% load static %}
-<footer class="bg-dark">
-    <div class="container p-5">
-        <div class="row">
-            <div class="col text-white text-center">
-                &copy; Todos os direitos reservados, 2025!
-            </div>
-        </div>
+<footer class="bg-dark text-white text-center py-4 fixed-bottom">
+    <div class="container">
+        &copy; Todos os direitos reservados, 2026!
     </div>
 </footer>
 {% block 'footer' %}
