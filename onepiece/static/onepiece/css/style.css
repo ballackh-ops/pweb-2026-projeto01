@@ -1,0 +1,32 @@
+#hero{
+    height: auto;
+    max-height: 90vh;
+    overflow: hidden;
+    border-radius: 0px;
+}
+#hero img{
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+#hero .card-img-overlay{
+    padding-top: 15% ;
+}
+
+.bg-lightgray{
+    background-color: lightgray;
+}
+
+.text-justify{
+    text-align: justify;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+#fatos .card{
+    transition: all ease-in-out 0.2s;
+} 
+
+#fatos .card:hover{
+    transform: translateY(-10px);
+}
